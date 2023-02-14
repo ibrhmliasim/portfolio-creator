@@ -41,6 +41,39 @@ nav > a:hover{
     transition: transform 1.4s ease;
 }
 
+.introduction{
+    display: flex;
+    align-items: center;
+}
+
+
+.intro-left-side{
+    height: 300px;
+    flex-basis: 50%;
+}
+
+.intro-left-side h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.intro-left-side h1 span{
+    color: #FF8A56;
+}
+
+.intro-right-side{
+    height: 595px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-right-side img{
+    height: 100%;
+}
+
+
+
 @media (max-width:768px) {
     .nav-links {
         display: none;
