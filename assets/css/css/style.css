@@ -1,0 +1,56 @@
+
+
+
+@import url(./_reset.css);
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-bars{
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+header{
+    padding: 44.98px 112.5px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+}
+
+nav > a{
+     color: #222;
+     padding: 8px;
+}
+
+nav > a:hover{
+    transform: translateY(15px);
+    transition: transform 1.4s ease;
+}
+
+@media (max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .fa-bars{
+        display: block ;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
