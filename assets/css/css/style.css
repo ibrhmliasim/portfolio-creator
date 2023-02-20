@@ -7,10 +7,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .fa-bars{
@@ -21,19 +23,19 @@ body{
 
 header{
     padding: 44.98px 112.5px 0px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links{
-    display: flex;
-}
 
 nav > a{
      color: #222;
      padding: 8px;
+}
+
+.nav-links{
+    display: flex;
 }
 
 nav > a:hover{
@@ -44,46 +46,111 @@ nav > a:hover{
 .introduction{
     display: flex;
     align-items: center;
+    padding: 20px 112.5px;
+    flex-wrap: wrap;
 }
 
 
 .intro-left-side{
-    height: 300px;
+
     flex-basis: 50%;
+    padding-top: 113px;
+    min-width: 600px;
 }
 
+
 .intro-left-side h1{
-    font-size: 4.5rem;
+    font-size: 60px;
     font-weight: 700;
+
 }
 
 .intro-left-side h1 span{
     color: #FF8A56;
 }
 
+.intro-left-side p{
+    padding: 40px 0;
+    color: #666666;
+    font-weight: 400;
+}
+
+.intro-left-side button{
+    font-weight: ;
+    padding: 15px 25px;
+    background-color: #222;
+    color: white;
+    margin: 0 30px 0 0;
+}
+
+.intro-left-side a{
+    margin: 0 30px 0 0;
+    color: #222;
+}
+
 .intro-right-side{
+    min-width: 500px;
     height: 595px;
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    padding-top: 140px;
 }
 
 .intro-right-side img{
+
     height: 100%;
 }
 
 
+@media (max-width: 840px) {
 
-@media (max-width:768px) {
     .nav-links {
         display: none;
     }
 
     .fa-bars{
         display: block ;
+        cursor: pointer;
+        font-size: 24px;
     }
 
     header {
         padding: 20px;
+    }
+
+
+}
+
+@media(max-width: 1312px) {
+    .intro-left-side{
+
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .intro-right-side{
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width:865px){
+    .introduction{
+        padding: 20px;
+    }
+
+    .intro-left-side{
+        min-width: 570px;
+
+    }
+
+    .intro-left-side h1{
+        font-size: 58px;
+    }
+
+    .fa-bars{
+        display: ;
     }
 }
