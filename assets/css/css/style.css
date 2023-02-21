@@ -76,7 +76,6 @@ nav > a:hover{
 }
 
 .intro-left-side button{
-    font-weight: ;
     padding: 15px 25px;
     background-color: #222;
     color: white;
@@ -150,7 +149,38 @@ nav > a:hover{
         font-size: 58px;
     }
 
-    .fa-bars{
-        display: ;
+}
+
+
+/*Trusted By HISSESI*/
+
+.trusted-by{
+    background-color: ed;
+    display: flex;
+    flex-direction: column;
+}
+
+.trusted-by h6{
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+.companies{
+    background-color: t;
+    display: flex;
+    justify-content: space-around;
+    padding: 77px;
+}
+
+@media (max-width:768px){
+    .class:nth-child(even) {
+        display: none;
+    }
+}
+
+@media (max-width:576px){
+    .company.not :first-child {
+        display: none;
     }
 }
