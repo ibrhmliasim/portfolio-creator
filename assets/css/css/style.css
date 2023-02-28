@@ -15,6 +15,53 @@ body{
     overflow-x: hidden;
 }
 
+/* OVERLAY MENU */
+
+.overlay {
+    background-color: rgba(0,0,0,.9);
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    overflow-x:hidden;
+    transition: width 1.8s ease;
+}
+
+.active{
+    width: 100%;
+}
+
+.overlay > .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.overlay > .nav-links > a{
+    color: #666;
+    font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.overlay > .nav-links > a:hover{
+    color: #fff;
+    transform: translateX(25px);
+}
+
+.fa-xmark{
+    cursor: pointer;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+}
+
+/*OVERLAY MENU SONU*/
+
+
 .fa-bars{
     display: none;
     cursor: pointer;
@@ -208,8 +255,16 @@ nav > a:hover{
 
 .services-cards {
     display: flex;
-    justify-content: space-around;
-}
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.service-card {
+    margin-right: 10px;
+    min-width: 306px;
+    padding: 20px 0;
+ }
 
 .service-card h3{
     font-size: 24px;
@@ -236,7 +291,7 @@ nav > a:hover{
     text-align: center;
     font-weight: 700;
     font-size: 54px;
-    padding-bottom: 115px;
+    padding-bottom: 40px;
 }
 
 .services p {
@@ -248,6 +303,26 @@ nav > a:hover{
     list-style-position: inside;
 }
 
+.services-cards li {
+    margin: 0 !important;
+ }
+
 .services li{
     padding: 10px;
+}
+
+@media (max-width: 1210px){
+    .services{
+        padding: 30px 0;
+    }
+
+    .services > h1{
+        margin: 20px;
+    }
+
+    .service-card {
+        /*box-shadow: -14px -8px 20px 0px;*/
+        padding: 40px;
+    }
+
 }
