@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- PULSUZ REKLAM-->
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Asim Ibrahimli">
+
+    <!-- AOS KITABXANASI -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     </style>
-
+    <link rel="shortcut icon" href="/assets/css/images/letterP.png">
     <link rel="stylesheet" href="/assets/css/css/style.css">
     <title>Portfolio Creator</title>
 </head>
@@ -27,7 +35,7 @@
         </div>
     </div>
 
-    <header class="header-hissesi">
+    <header class="header-hissesi" data-aos="fade-down" data-aos-duration="2000">
 
 
         <div class="logo">
@@ -53,7 +61,7 @@
 
     <section class="introduction">
 
-        <div class="intro-left-side">
+        <div class="intro-left-side" data-aos="fade-right" data-aos-duration="2000">
             <h1> <span>I design products</span>
             <br>that delight and <br> inspire people. </h1>
 
@@ -66,7 +74,7 @@
 
         </div>
 
-        <div class="intro-right-side">
+        <div class="intro-right-side" data-aos="fade-left" data-aos-duration="2000">
             <img src="/assets/css/images/profileph.svg" alt="Photo">
         </div>
 
@@ -111,7 +119,7 @@
 
         <div class="services-cards">
 
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in-right" data-aos-duration="1500">
                 <img src="/assets/css/images/services-logo/icon1.svg" alt="">
                 <h3>What can I do for you</h3>
                 <p>Faster, better products that your <br> users love. Here's all the services I provide:</p>
@@ -123,7 +131,7 @@
                 </ul>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1500">
                 <img src="/assets/css/images/services-logo/icon2.svg" alt="">
                 <h3>Applications I'm fluent in</h3>
                 <p>Every designer needs the right <br> tools to do the perfect job. <br> Thankfully, I'm multilingual.</p>
@@ -135,7 +143,7 @@
                 </ul>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in-left" data-aos-duration="1500">
                 <img src="/assets/css/images/services-logo/icon3.svg" alt="">
                 <h3>What you can expect</h3>
                 <p>I design products that are more <br> than pretty. I make them sippable <br> and usable</p>
@@ -151,6 +159,66 @@
 
     </section>
 
+
+
+
+
+    <section class="projects-section">
+        <h6 class="">PROJECTS</h6>
+
+        <div class="view-all-section">
+
+            <h3>I bring results. <br>
+                My clients are proof.
+            </h3>
+
+            <button>View all projects</button>
+        </div>
+
+            <div class="project-cards-section">
+
+                <div class="project-card">
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project1.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>BRANDING</h5>
+                        <h4>Soulful Brand</h4>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project2.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>PRODUCT DESIGN</h5>
+                        <h4>Datadash Product design</h4>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project3.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>WEB DESIGN</h5>
+                        <h4>Maize Website Design</h4>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <script>
         document.querySelector('.fa-bars').onclick = function() {
             document.querySelector('.overlay').classList.add('active')
@@ -159,6 +227,8 @@
         document.querySelector('.fa-xmark').onclick = function() {
             document.querySelector('.overlay').classList.remove('active')
         }
+
+        AOS.init();
      </script>
 </body>
 </html>
