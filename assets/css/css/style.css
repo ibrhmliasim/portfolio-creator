@@ -397,3 +397,113 @@ nav a:not(:last-child):hover::before {
     color: white;
     margin: 0 30px 0 0;
 }
+
+
+/*BLOGS Hissesi*/
+
+.blogs-section {
+    background-color: #000;
+    padding-left: 113px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs p {
+    color: #FFA84B;
+    font-size: 22px;
+
+}
+
+.latest-blogs {
+    color: #fff;
+    font-size: 55px;
+    padding: 20px 0 20px 0;
+}
+
+.view-all{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.blogs-right-side {
+    padding-right: 250px;
+}
+
+.blogs-right-side hr{
+    border-color: #c4bfbfb2;
+}
+
+.info-with-date-card {
+    color: white;
+    padding-top: 45px;
+
+}
+
+.info-with-date-card span{
+    font-size: 28px;
+}
+
+.date-card-top{
+    padding-bottom: 30px;
+    color: #FFFFFFB2;
+    font-size: 15px;
+}
+
+
+.date-card-bottom{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+
+
+/*PRODUCT DESIGNER Hissesi*/
+
+.product-designer-section{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-designer{
+    color: #FF5E69;
+    font-size: 25px;
+}
+
+.thats-me{
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.product-designer-left-side{
+    padding-left: 100px;
+}
+
+.product-designer-right-side{
+    padding-right: 100px;
+    color: #666666;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.product-designer-images-part{
+    padding-top: 120px;
+}
+
+.product-designer-images{
+    display: flex;
+    justify-content: end;
+}
+
+.product-designer-img1 {
+    padding-left: 50px;
+}
+
+.product-designer-img2{
+    padding: 0 60px 0 60px;
+}
+
