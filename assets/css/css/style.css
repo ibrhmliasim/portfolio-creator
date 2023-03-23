@@ -358,7 +358,7 @@ nav a:not(:last-child):hover::before {
 }
 
 
-/*Projects-Section HISSESI*/
+/*******************  Projects-Section HISSESI  ********************/
 
 
 .view-all-section{
@@ -442,7 +442,7 @@ nav a:not(:last-child):hover::before {
 }
 
 
-/*BLOGS Hissesi*/
+/*****************************  BLOGS Hissesi  ***************************/
 
 .blogs-section {
     background-color: #000;
@@ -509,7 +509,7 @@ nav a:not(:last-child):hover::before {
 
 
 
-/*PRODUCT DESIGNER Hissesi*/
+/**********************  PRODUCT DESIGNER Hissesi  *********************/
 
 .product-designer-section{
     padding-top: 150px;
@@ -523,6 +523,8 @@ nav a:not(:last-child):hover::before {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    padding-top: 120px;
+    padding-bottom: 100px;
 }
 
 .pds-text .left-side{
@@ -616,7 +618,7 @@ nav a:not(:last-child):hover::before {
     height: 100%;
 }
 
-/*Edu-Work Hissesi*/
+/************************  Edu-Work Hissesi  ************************/
 
 .education-work-section {
     display: flex;
@@ -626,7 +628,6 @@ nav a:not(:last-child):hover::before {
  }
 
  .edu-side {
-    /* background-color: red; */
     flex-basis: 40%;
     min-width: 447px;
 
@@ -660,7 +661,6 @@ nav a:not(:last-child):hover::before {
  }
 
   .work-side {
-    /* background-color: green; */
     flex-basis: 50%;
     /* min-width: 447px; */
     padding-left: 60px;
@@ -694,7 +694,6 @@ nav a:not(:last-child):hover::before {
     display: flex;
     justify-content: space-between;
     margin-bottom: -5px;
-    /* padding-bottom: 25px; */
  }
 
  .work-bottom {
@@ -710,68 +709,63 @@ nav a:not(:last-child):hover::before {
 
 
 
+/*******************  Testimonials HISSESI  ******************/
 
 
+.testimonials-section{
+    padding: 190px 40px 0 80px;
+}
 
+.heading-side h4{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4353FF;
+}
 
+.heading-side span{
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+}
 
-/*
-.edu-work-title{
-    padding: 120px 0 60px 110px;
-    font-size: 25px;
+.img-and-text{
     display: flex;
-    justify-content: baseline;
-    justify-content: space-between;
+    gap: 200px;
 }
 
-.edu-work-cards{
-    display: flex;
-}
-
-.work-experience{
-    padding-right: 450px;
-}
-
-.unies{
-    width: 500px;
-    padding-left: 110px;
-}
-
-.unies span{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.unies article{
+.img-and-text .right-side img{
     padding-bottom: 35px;
 }
 
-.works{
+.img-and-text img{
+    padding-top: 85px;
+}
+
+.img-and-text p{
+    font-size: 36px;
+}
+
+.img-and-text footer{
+    padding-top: 145px;
+
     display: flex;
-    justify-content: space-between;
-    width: max-content;
-    padding-left: 140px;
+    flex-direction: column;
 }
 
-.works img{
-    align-items: first baseline;
-    margin-bottom: 50px;
+.img-and-text footer span{
+    font-size: 20px;
 }
 
-.work-text{
-    padding-left: 20px;
+.img-and-text .slider-btns {
+    align-self: flex-end;
+    margin-top: -110px;
+    padding-left: 100px;
 }
 
-.work-text span{
-    font-size: 25px;
-    font-weight: bold;
-}
+.img-and-text .slider-btns button {
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
 
-.work-text article{
-    padding-top: 10px;
 }
-
- .work-text img{
-    justify-content: end;
-    align-items: end;
- } */
