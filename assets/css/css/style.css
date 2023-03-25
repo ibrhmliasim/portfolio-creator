@@ -769,3 +769,57 @@ nav a:not(:last-child):hover::before {
     cursor: pointer;
 
 }
+
+
+
+/*******************  FAQ SECTION  ******************/
+
+
+.faq-section{
+    background-color: #000;
+    margin-top: 200px;
+}
+
+.faq-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-heading {
+    padding-top: 80px;
+    color: #FF8A56;
+    font-size: 22px;
+}
+
+.faq-subheading{
+    color: #dedede;
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.questions-section{
+    padding: 120px 80px 150px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-left-side{
+    width: 45%;
+}
+.questions-right-side{
+    width: 50%;
+}
+
+
+.question{
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 0 50px 0;
+    border-bottom: 1px solid #E5E5E54D;
+}
