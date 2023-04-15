@@ -11,17 +11,58 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
-.fa-bars{
-    display: none;
-    cursor: pointer;
-    font-size: 22px;
+/* OVERLAY MENU */
+
+.overlay {
+    background-color: rgba(0,0,0,.9);
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    overflow-x:hidden;
+    transition: width 1.8s ease;
 }
+
+.active{
+    width: 100%;
+}
+
+.overlay > .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.overlay > .nav-links > a{
+    color: #666;
+    font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.overlay > .nav-links > a:hover{
+    color: #fff;
+    transform: translateX(25px);
+}
+
+.fa-xmark{
+    cursor: pointer;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+}
+
+
+/************* Header Section ************/
 
 header{
     padding: 44.98px 112.5px 0px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +82,60 @@ nav > a:hover{
     transition: transform 1.4s ease;
 }
 
-@media (max-width:768px) {
+
+.intro-left-side{
+
+    flex-basis: 50%;
+    padding-top: 113px;
+    /* min-width: 600px; */
+}
+
+
+.intro-left-side h1{
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.intro-left-side h1 span{
+    color: #FF8A56;
+}
+
+.intro-left-side p{
+    padding: 40px 0;
+    color: #666666;
+    font-weight: 400;
+}
+
+.intro-left-side button{
+    padding: 15px 25px;
+    background-color: #222;
+    color: white;
+    margin: 0 30px 0 0;
+}
+
+.intro-left-side a{
+    margin: 0 30px 0 0;
+    color: #222;
+}
+
+.intro-right-side{
+    /* min-width: 500px;
+    height: 595px; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 140px;
+}
+
+.intro-right-side img{
+
+    height: 100%;
+}
+
+/*
+@media (max-width: 840px) {
+
     .nav-links {
         display: none;
     }
@@ -53,4 +147,698 @@ nav > a:hover{
     header {
         padding: 20px;
     }
+
+}
+
+@media(max-width: 1312px) {
+    .intro-left-side{
+
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .intro-right-side{
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width:865px){
+    .introduction{
+        padding: 20px;
+    }
+
+    .intro-left-side{
+        min-width: 570px;
+
+    }
+
+    .intro-left-side h1{
+        font-size: 58px;
+    }
+
+} */
+
+
+
+
+
+/*Trusted By HISSESI*/
+
+.trusted-by{
+    background-color: ed;
+    display: flex;
+    flex-direction: column;
+}
+
+.trusted-by h6{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.companies{
+    background-color: t;
+    display: flex;
+    justify-content: space-around;
+    padding: 77px;
+}
+
+/* @media (max-width:768px){
+    .class:nth-child(even) {
+        display: none;
+    }
+}
+
+@media (max-width:576px){
+    .company.not :first-child {
+        display: none;
+    }
+} */
+
+
+
+
+/*Services HISSESI*/
+
+
+.services {
+    padding: 0px 171px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-cards {
+    display: flex;
+    margin: 40px 0;
+    flex-wrap: wrap;
+
+ }
+
+
+.service-card {
+    margin-right: px;
+    min-width: 306px;
+    padding: 20px 0px 20px 35px;
+ }
+
+/* .service-card:hover{
+    transform: rotateY(360deg);
+    transition: transform 1.4 linear;
+ } */
+
+
+.service-card h3{
+    font-size: 24px;
+}
+
+.service-card p {
+    padding: 25px;
+}
+
+.service-card img{
+    padding-bottom: 35px;
+}
+
+.services h6 {
+    text-align: center;
+    color: red;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+}
+
+.services h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 40px;
+}
+
+.services p {
+    color: #666666;
+}
+
+.services ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.services-cards li {
+    margin: 0 !important;
+ }
+
+.services li{
+    padding: 10px;
+}
+
+
+/*******************  Projects-Section HISSESI  ********************/
+
+
+.view-all-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all-section h3{
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.view-all-section button{
+    padding: 15px 25px;
+    background-color: #222;
+    color: white;
+    margin: 0px 90px 0 0;
+    cursor: pointer;
+}
+
+
+.projects-section {
+    padding: 167px 0px 70px 113px;
+}
+
+.projects-section h6{
+    color: #B16CEA;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+.project-cards-section a{
+    color: #000;
+}
+
+.project-cards-section{
+    display: flex;
+    margin-right: 25px;
+    padding-top: 70px;
+}
+
+.project-card{
+    padding-right: 20px;
+    width: 486px;
+    height: 468px;
+    /* box-shadow: 10px 15px 12px rgba(0.0.0 0.9); */
+}
+
+.card-top{
+    width: inherit;
+    height: 305px;
+}
+
+.project-card .card-top img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-card .card-bottom{
+    height: 123px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.slider-btns {
+    align-self: flex-end;
+    padding-top: 60px;
+    padding-left: 1100px;
+}
+
+.slider-btns button {
+    width: 54px;
+    height: 54px;
+    border: transparent;
+    cursor: pointer;
+
+}
+
+
+/*****************************  BLOGS Hissesi  ***************************/
+
+.blogs-section {
+    background-color: #000;
+    padding: 310px 0 150px 113px;
+    margin-top: -350px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blogs-left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs p {
+    color: #FFA84B;
+    font-size: 22px;
+
+}
+
+.latest-blogs {
+    color: #fff;
+    font-size: 55px;
+    padding: 20px 0 20px 0;
+}
+
+.view-all{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.blogs-right-side {
+    padding-right: 250px;
+}
+
+
+.info-with-date-card {
+    color: white;
+    padding-top: 45px;
+    border-bottom: 1px solid #666;
+
+}
+
+.info-with-date-card span{
+    font-size: 28px;
+}
+
+.date-card-top{
+    padding-bottom: 30px;
+    color: #FFFFFFB2;
+    font-size: 15px;
+}
+
+
+.date-card-bottom{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+
+
+/**********************  PRODUCT DESIGNER Hissesi  *********************/
+
+.product-designer-section{
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pds-text{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.pds-text .left-side{
+    flex-basis: 30%;
+    padding-left: 110px;
+}
+
+.pds-text .left-side h4{
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #FF5E69;
+}
+
+.pds-text .left-side span{
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.pds-text .right-side{
+    flex-basis: 45%;
+    padding-right: 110px;
+}
+
+.pds-text .right-side p{
+    justify-content: baseline;
+    font-size: 22px;
+    color: #666;
+}
+
+.pds-image{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.pds-image .left-side{
+    width: 338px;
+    height: 626px;
+
+    min-width: 250px;
+}
+
+.pds-image .left-side img{
+    width: 100%;
+    height: 100%;
+}
+
+.pds-image .center{
+    padding: 0;
+
+    width: 556px;
+    height: 626px;
+
+    min-width: 250px;
+}
+
+.pds-image .center img{
+    width: 100%;
+    height: 100%;
+}
+
+.pds-image .right-side{
+    width: 338px;
+    height: 326px;
+    gap: 16px;
+
+    min-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pds-image .right-side .rs-top{
+    width: inherit;
+    height: 305px;
+}
+
+.pds-image .right-side .rs-top img{
+    width: 100%;
+    height: 100%;
+}
+
+.pds-image .right-side .rs-bottom{
+    width: inherit;
+    height: 305px;
+}
+
+.pds-image .right-side .rs-bottom img{
+    width: 100%;
+    height: 100%;
+}
+
+/************************  Edu-Work Hissesi  ************************/
+
+.education-work-section {
+    display: flex;
+    gap: 20px;
+    padding: 110px 25px 0 112px;
+    flex-wrap: wrap;
+ }
+
+ .edu-side {
+    flex-basis: 40%;
+    min-width: 447px;
+
+ }
+
+ .edu-side h1 {
+    font-size: 24px;
+    margin-bottom: -5px;
+ }
+
+ .education {
+    flex: 1;
+    border-bottom:1px solid #dedede;
+    padding: 40px 40px 40px 0;
+ }
+
+ .education-top {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.education-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+ .education-bottom > span:nth-child(2) {
+    /* margin-top: 40px; */
+    margin-right: 40px;
+ }
+
+  .work-side {
+    flex-basis: 50%;
+    /* min-width: 447px; */
+    padding-left: 60px;
+}
+
+ .work-side h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+ }
+
+ .work-section {
+    display: flex;
+    align-items: center;
+    padding-top: -10px;
+ }
+
+ .work-section img {
+    /* background-color: red; */
+    flex-basis: 1;
+ }
+
+ .work {
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #dedede;
+    padding: 40px 40px 40px 20px;
+    flex:1;
+ }
+
+ .work-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5px;
+ }
+
+ .work-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: -100px;
+ }
+
+
+ .work-bottom > h1 span:nth-child(2) {
+    margin-right: 40px;
+ }
+
+
+
+/*******************  Testimonials HISSESI  ******************/
+
+
+.testimonials-section{
+    padding: 190px 40px 0 80px;
+}
+
+.heading-side h4{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4353FF;
+}
+
+.heading-side span{
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+}
+
+.img-and-text{
+    display: flex;
+    gap: 200px;
+}
+
+.img-and-text .right-side img{
+    padding-bottom: 35px;
+}
+
+.img-and-text img{
+    padding-top: 85px;
+}
+
+.img-and-text p{
+    font-size: 200%;
+}
+
+.img-and-text footer{
+    padding-top: 195px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img-and-text footer span{
+    font-size: 20px;
+}
+
+.img-and-text .slider-btns {
+    align-self: flex-end;
+    margin-top: -110px;
+    padding-left: 100px;
+}
+
+.img-and-text .slider-btns button {
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+
+}
+
+
+
+/*******************  FAQ SECTION  ******************/
+
+
+.faq-section{
+    background-color: #000;
+    margin-top: 200px;
+}
+
+.faq-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-heading {
+    padding-top: 80px;
+    color: #FF8A56;
+    font-size: 22px;
+}
+
+.faq-subheading{
+    color: #dedede;
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.questions-section{
+    padding: 120px 80px 150px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-left-side{
+    width: 45%;
+}
+.questions-right-side{
+    width: 50%;
+}
+
+
+.question{
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 0 50px 0;
+    border-bottom: 1px solid #E5E5E54D;
+}
+
+
+
+
+/*******************  FOOTER  ******************/
+
+.footer{
+    height: 575px;
+    background-color: #000;
+    padding: 150px 80px 20px 80px;
+}
+
+.foot-heading{
+    color: #dedede;
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+
+.foot-subheading{
+    color: #3C46FF;
+    font-size: 44px;
+}
+
+.info-side{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    color: #dedede;
+}
+
+.info-left-side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.info-left-side img{
+    width: 190px;
+}
+
+.info-left-side span, a{
+    color: #666666;
+}
+
+.info-left-side span{
+    padding: 15px 0 15px 0;
+}
+
+.info-right-side{
+    width: 340px;
+    padding-top: 0px;
+    padding-right: 280px;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-right-side span{
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
 }
