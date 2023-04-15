@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- PULSUZ REKLAM-->
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Asim Ibrahimli">
+
+    <!-- AOS KITABXANASI -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     </style>
-
+    <link rel="shortcut icon" href="/assets/css/images/letterP.png">
     <link rel="stylesheet" href="/assets/css/css/style.css">
     <title>Portfolio Creator</title>
 </head>
 <body>
 
-    <header class="header-hissesi">
+
+    <div class="overlay">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="nav-links">
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="">Blogs</a>
+            <a href="">Book a call</a>
+        </div>
+    </div>
+
+
+
+    <header class="header-hissesi" data-aos="fade-down" data-aos-duration="2000">
 
 
         <div class="logo">
@@ -37,9 +59,615 @@
 
     </header>
 
+
+
     <section class="introduction">
-        .intro-left-side
+
+        <div class="intro-left-side" data-aos="fade-right" data-aos-duration="2000">
+            <h1> <span>I design products</span>
+            <br>that delight and <br> inspire people. </h1>
+
+            <p>Hi! I’m Jake, a product designer based in Berlin. I create <br> user-friendly interfaces for fast-growing startups.</p>
+
+            <button>Book a call</button>
+
+            <a href="./assets/css/fake CV.pdf">Download a CV</a>
+            <img src="/assets/css/images/right-arrow.svg" alt="">
+
+        </div>
+
+        <div class="intro-right-side" data-aos="fade-left" data-aos-duration="2000">
+            <img src="/assets/css/images/profileph.svg" alt="Photo">
+        </div>
 
     </section>
+
+
+
+    <section class="trusted-by">
+
+        <h6>Trusted By</h6>
+
+        <div class="companies">
+
+            <div class="company">
+                <img src="/assets/css/images/Shirketler-hissesi/IMAGE.svg" alt="">
+            </div>
+
+            <div class="company">
+                <img src="/assets/css/images/Shirketler-hissesi/IMAGE-1.svg" alt="">
+            </div>
+
+            <div class="company">
+                <img src="/assets/css/images/Shirketler-hissesi/IMAGE-2.svg" alt="">
+            </div>
+
+            <div class="company">
+                <img src="/assets/css/images/Shirketler-hissesi/IMAGE-3.svg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="services">
+
+        <h6>Services</h6>
+
+        <h1>Design that solves problems, <br> one product at a time.</h1>
+
+        <div class="services-cards">
+
+            <div class="service-card" data-aos="zoom-in-right" data-aos-duration="1500">
+                <img src="/assets/css/images/services-logo/icon1.svg" alt="">
+                <h3>What can I do for you</h3>
+                <p>Faster, better products that your <br> users love. Here's all the services I provide:</p>
+
+                <ul>
+                    <li>Design Strategy</li>
+                    <li>Web and Mobile App Design</li>
+                    <li>Front-end Development</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="/assets/css/images/services-logo/icon2.svg" alt="">
+                <h3>Applications I'm fluent in</h3>
+                <p>Every designer needs the right <br> tools to do the perfect job. <br> Thankfully, I'm multilingual.</p>
+
+                <ul>
+                    <li>Sketch</li>
+                    <li>Webflow</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="zoom-in-left" data-aos-duration="1500">
+                <img src="/assets/css/images/services-logo/icon3.svg" alt="">
+                <h3>What you can expect</h3>
+                <p>I design products that are more <br> than pretty. I make them sippable <br> and usable</p>
+
+                <ul>
+                    <li>Design Strategy</li>
+                    <li>Web and Mobile App Design</li>
+                    <li>Front-end Development</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="projects-section">
+        <h6 class="">PROJECTS</h6>
+
+            <div class="view-all-section">
+
+            <h3>I bring results. <br>
+                My clients are proof.
+            </h3>
+
+            <button>View all projects</button>
+            </div>
+
+            <div class="project-cards-section">
+
+                <div class="project-card">
+
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project1.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>BRANDING</h5>
+                        <h4>Soulful Brand</h4>
+                        <a href="#">View Project <img src="./assets/css/images/right-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project2.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>PRODUCT DESIGN</h5>
+                        <h4>Datadash Product design</h4>
+                        <a href="#">View Project <img src="./assets/css/images/right-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-top">
+                        <img src="/assets/css/images/projects/project1.svg" alt="">
+                    </div>
+
+                    <div class="card-bottom">
+                        <h5>WEB DESIGN</h5>
+                        <h4>Maize Website Design</h4>
+                        <a href="#">View Project <img src="./assets/css/images/right-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slider-btns">
+                    <button class="previous">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.53487 7.34308L9.72237 13.0546L7.95487 14.6861L-0.00012207 7.34308L7.95487 0L9.72237 1.63154L3.53487 7.34308Z" fill="black"/>
+                        </svg>
+                    </button>
+
+                    <button class="next">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.1875 7.34308L0 1.63154L1.7675 0L9.7225 7.34308L1.7675 14.6862L0 13.0546L6.1875 7.34308Z" fill="black"/>
+                        </svg>
+
+                    </button>
+            </div>
+
+    </section>
+
+
+
+    <section class="blogs-section">
+
+        <div class="blogs-left-side">
+
+                <div class="blogs">
+                    <p>BLOGS</p>
+                </div>
+
+                <div class="latest-blogs">
+                Latest Blogs
+                </div>
+
+                <a href="#" class="view-all">
+                View All
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </a>
+
+        </div>
+
+
+         <div class="blogs-right-side">
+
+            <div class="info-with-date-card">
+                <div class="date-card-top">
+                    April 16, 2021. 6 mins <br>
+
+                </div>
+
+                <span>Design tips for designers, that cover <br> everything you need</span>
+
+                <div class="date-card-bottom">
+                    Read the article
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </div>
+            </div>
+
+
+            <div class="info-with-date-card">
+                <div class="date-card-top">
+                    April 16, 2021. 5 mins <br>
+
+                </div>
+
+                <span>How to build rapport with your web design <br> clients</span>
+
+                <div class="date-card-bottom">
+                    Read the article
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </div>
+            </div>
+
+
+            <div class="info-with-date-card">
+                <div class="date-card-top">
+                    April 16, 2021. 5 mins <br>
+
+                </div>
+
+                <span>Top 6 free website mockup tools 2021</span>
+
+                <div class="date-card-bottom">
+                    Read the article
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </div>
+            </div>
+
+
+            <div class="info-with-date-card">
+                <div class="date-card-top">
+                    April 16, 2021. 7 mins <br>
+
+                </div>
+
+                <span>Logo design trends to avoid in 2021</span>
+
+                <div class="date-card-bottom">
+                    Read the article
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </div>
+            </div>
+
+
+            <div class="info-with-date-card">
+                <div class="date-card-top">
+                    April 16, 2021. 7 mins <br>
+
+                </div>
+
+                <span>22 best UI design tools</span>
+
+                <div class="date-card-bottom">
+                    Read the article
+                    <img src="/assets/css/images/right-arrow-white.svg" alt="right-arrow-white">
+                </div>
+            </div>
+
+         </div>
+
+    </section>
+
+
+
+    <section class="product-designer-section">
+
+        <div class="pds-text">
+
+            <div class="left-side">
+                <h4>PRODUCT DESIGNER</h4>
+                <span>That's me</span>
+            </div>
+
+            <div class="right-side">
+                <p>Over the past 12 years, I've worked with a diverse range of <br> clients, from startups to Fortune 500 companies. I love crafting  interfaces that delight users and help businesses grow.</p>
+            </div>
+
+        </div>
+
+        <div class="pds-image">
+
+            <div class="left-side">
+                <img src="./assets/css/images/product-designer-images/telephone.svg" alt="">
+            </div>
+
+            <div class="center">
+                <img src="/assets/css/images/product-designer-images/workspace.svg" alt="">
+            </div>
+
+            <div class="right-side">
+                <div class="rs-top">
+                    <img src="./assets/css/images/product-designer-images/laptop.svg" alt="">
+                </div>
+
+                <div class="rs-bottom">
+                    <img src="./assets/css/images/product-designer-images/2girls-laptop.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="education-work-section">
+
+        <div class="edu-side">
+            <h1>📚 Education</h1>
+
+            <div class="education">
+                <div class="education-top">
+                    <h1>Stanford University</h1>
+                    <img src="./assets/css/images/right-corner-arrow.svg" alt="">
+                </div>
+
+                <div class="education-bottom">
+                    <span>MSc (Human Computer Interaction)</span>
+                    <span>• 2013-2015</span>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="education-top">
+                    <h1>MIT Summer School</h1>
+                    <img src="./assets/css/images/right-corner-arrow.svg" alt="">
+                </div>
+
+                <div class="education-bottom">
+                    <span>UX Training Bootcamp</span>
+                    <span>• 2013-2014</span>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="education-top">
+                    <h1>California State University</h1>
+                    <img src="./assets/css/images/right-corner-arrow.svg" alt="">
+                </div>
+
+                <div class="education-bottom">
+                    <span>BSc in Software Engineering</span>
+                    <span>• 2009-2012</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="work-side">
+            <h1>💼 Work Experience</h1>
+
+            <div class="work-section">
+                <img src="/assets/css/images/work-expr/rocket.svg" alt="">
+
+                <div class="work">
+                    <div class="work-top">
+                        <h1>SpaceFleet</h1>
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6707 3.80625L1.70509 12.7719L0.232178 11.299L9.19675 2.33333H1.29572V0.25H12.754V11.7083H10.6707V3.80625Z" fill="black"/>
+                            </svg>
+
+                    </div>
+                    <div class="work-bottom">
+                        <span>Senior Product Designer</span>
+                        <span>• April 2019 - Current</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="work-section">
+                <img src="/assets/css/images/work-expr/music.svg" alt="">
+
+                <div class="work">
+                    <div class="work-top">
+                        <h1>MusicMash</h1>
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6707 3.80625L1.70509 12.7719L0.232178 11.299L9.19675 2.33333H1.29572V0.25H12.754V11.7083H10.6707V3.80625Z" fill="black"/>
+                            </svg>
+
+                    </div>
+                    <div class="work-bottom">
+                        <span>Information Architect</span>
+                        <span>• April 2016 - May 2017</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="work-section">
+                <img src="/assets/css/images/work-expr/king.svg" alt="">
+
+                <div class="work">
+                    <div class="work-top">
+                        <h1>Kingdom</h1>
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6707 3.80625L1.70509 12.7719L0.232178 11.299L9.19675 2.33333H1.29572V0.25H12.754V11.7083H10.6707V3.80625Z" fill="black"/>
+                            </svg>
+
+                    </div>
+                    <div class="work-bottom">
+                        <span>UI Designer</span>
+                        <span>• April 2016 - May 2017</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonials-section">
+
+        <div class="heading-side">
+                <h4> TESTIMONIALS </h4>
+                <span>Word on the street</span>
+            </div>
+
+        <div class="img-and-text">
+
+            <div class="left-side">
+                <img src="./assets/css/images/testimonials/curly-hair.svg" alt="">
+            </div>
+
+            <div class="right-side">
+                <img src="./assets/css/images/testimonials/kavichki.svg" alt="">
+                <p>Jade helped us build a software so <br> intuitive that it didn't need a <br> walkthrough. He solved complex <br> problems with brilliant design.</p>
+
+                <footer>
+                    <span> <b>John Frankin</b> </span>
+                    <span>Founder, Double Bunch</span>
+
+                    <div class="slider-btns">
+
+                        <button class="previous">
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H54V54H0V0Z" fill="black"/>
+                                <path d="M25.8279 26.364L30.7779 31.314L29.3639 32.728L22.9999 26.364L29.3639 20L30.7779 21.414L25.8279 26.364Z" fill="white"/>
+                            </svg>
+                        </button>
+
+                        <button class="next">
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H54V54H0V0Z" fill="black"/>
+                                <path d="M27.95 26.364L23 21.414L24.414 20L30.778 26.364L24.414 32.728L23 31.314L27.95 26.364Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="faq-section">
+
+        <div class="faq-head">
+            <div class="faq-heading">
+                <span>FAQ</span>
+            </div>
+
+            <div class="faq-subheading">
+                <span>Frequently Asked Questions</span>
+            </div>
+        </div>
+
+        <div class="questions-section">
+            <div class="questions-left-side">
+
+                <div class="question">
+                    <span>What type of projects do you take on?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What is your hourly rate?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What time-zone do you work in?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What is the typical timeline for a project?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="questions-right-side">
+                <div class="question">
+                    <span>How do you charge for projects ?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What does your design process look like?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What metrics do you use to measure success?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+
+                <div class="question">
+                    <span>What if I need help after the project is complete?</span>
+                    <img src="./assets/css/images/bottom-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="foot-heads">
+            <div class="foot-heading">
+                <h2>Ready to make something kickass?</h2>
+            </div>
+
+            <div class="foot-subheading">
+                <h3>Let's get on a call.</h3>
+            </div>
+        </div>
+
+        <div class="info-side">
+            <div class="info-left-side">
+                <img src="./assets/css/images/port-creator.svg" alt="">
+
+                <span>4353 Delaware Avenue, San Francisco, USA</span>
+
+                <a href="#">
+                    <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48148 0H28.1481C28.5411 0 28.9179 0.122916 29.1957 0.341709C29.4736 0.560501 29.6297 0.857247 29.6297 1.16666V19.8334C29.6297 20.1428 29.4736 20.4395 29.1957 20.6583C28.9179 20.8771 28.5411 21 28.1481 21H1.48148C1.08857 21 0.711748 20.8771 0.433916 20.6583C0.156084 20.4395 0 20.1428 0 19.8334V1.16666C0 0.857247 0.156084 0.560501 0.433916 0.341709C0.711748 0.122916 1.08857 0 1.48148 0ZM14.9037 10.1301L5.40444 3.77766L3.48592 5.55566L14.923 13.2031L26.1541 5.54984L24.2163 3.78466L14.9052 10.1301H14.9037Z" fill="#424242" fill-opacity="0.5"/></svg>
+                    hi@thefolio.com
+                </a>
+            </div>
+
+            <div class="info-right-side">
+                <div class="left">
+                    <span>About</span>
+                    <span>Contact</span>
+                    <span>Dribble</span>
+                </div>
+
+                <div class="center">
+                    <span>Services</span>
+                    <span>Blog</span>
+                    <span>Instagram</span>
+                </div>
+
+                <div class="right">
+                    <span>Experience</span>
+                    <span>Projects</span>
+                    <span>Twitter</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-bottom-side">
+            <span>© All rights reserved.</span>
+            <span>Sumit Hegde.</span>
+            <span>Powered by </span>
+            <span>Webflow</span>
+            <span>/ Image License Info</span>
+            <span>/ Instructions</span>
+            <span>/ Changelog</span>
+            <span>/ Style Guide</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.querySelector('.fa-bars').onclick = function() {
+            document.querySelector('.overlay').classList.add('active')
+        }
+
+        document.querySelector('.fa-xmark').onclick = function() {
+            document.querySelector('.overlay').classList.remove('active')
+        }
+
+        AOS.init();
+     </script>
 </body>
 </html>
