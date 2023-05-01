@@ -1,4 +1,7 @@
-
+:root{
+    --qara-reng:#000;
+    --goy-reng:#1a2fde;
+}
 
 
 @import url(./_reset.css);
@@ -7,6 +10,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
 }
 
 body{
@@ -58,8 +62,14 @@ body{
     right: 3%;
 }
 
+/*OVERLAY MENU SONU*/
 
-/************* Header Section ************/
+
+.fa-bars{
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+}
 
 header{
     padding: 44.98px 112.5px 0px;
@@ -68,18 +78,52 @@ header{
     align-items: center;
 }
 
+
 .nav-links{
     display: flex;
 }
 
-nav > a{
-     color: #222;
-     padding: 8px;
+nav > a {
+    color: #222;
+    padding: 8px;
+    position: relative;
+    margin-right: 4px;
 }
 
-nav > a:hover{
+nav a:not(:last-child)::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: var(--qara-reng);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+
+nav a:not(:last-child):hover::before {
+    transform: scaleX(1);
+    transition: transform 0.5s linear;
+    transform-origin: left;
+}
+
+/*nav > a:hover{
     transform: translateY(15px);
     transition: transform 1.4s ease;
+}*/
+
+
+
+
+
+/*Introduction HISSESI*/
+
+.introduction{
+    display: flex;
+    align-items: center;
+    padding: 20px 112.5px;
+    flex-wrap: wrap;
 }
 
 
@@ -87,7 +131,7 @@ nav > a:hover{
 
     flex-basis: 50%;
     padding-top: 113px;
-    /* min-width: 600px; */
+    min-width: 600px;
 }
 
 
@@ -120,8 +164,8 @@ nav > a:hover{
 }
 
 .intro-right-side{
-    /* min-width: 500px;
-    height: 595px; */
+    min-width: 500px;
+    height: 595px;
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -133,7 +177,7 @@ nav > a:hover{
     height: 100%;
 }
 
-/*
+
 @media (max-width: 840px) {
 
     .nav-links {
@@ -142,11 +186,14 @@ nav > a:hover{
 
     .fa-bars{
         display: block ;
+        cursor: pointer;
+        font-size: 24px;
     }
 
     header {
         padding: 20px;
     }
+
 
 }
 
@@ -178,7 +225,7 @@ nav > a:hover{
         font-size: 58px;
     }
 
-} */
+}
 
 
 
@@ -194,7 +241,6 @@ nav > a:hover{
 
 .trusted-by h6{
     font-weight: 400;
-    font-size: 20px;
     color: #000000;
     text-align: center;
 }
@@ -206,7 +252,7 @@ nav > a:hover{
     padding: 77px;
 }
 
-/* @media (max-width:768px){
+@media (max-width:768px){
     .class:nth-child(even) {
         display: none;
     }
@@ -216,7 +262,7 @@ nav > a:hover{
     .company.not :first-child {
         display: none;
     }
-} */
+}
 
 
 
@@ -295,6 +341,22 @@ nav > a:hover{
     padding: 10px;
 }
 
+@media (max-width: 1210px){
+    .services{
+        padding: 30px 0;
+    }
+
+    .services > h1{
+        margin: 20px;
+    }
+
+    .service-card {
+        /*box-shadow: -14px -8px 20px 0px;*/
+        padding: 40px;
+    }
+
+}
+
 
 /*******************  Projects-Section HISSESI  ********************/
 
@@ -314,8 +376,7 @@ nav > a:hover{
     padding: 15px 25px;
     background-color: #222;
     color: white;
-    margin: 0px 90px 0 0;
-    cursor: pointer;
+    margin: 0 30px 0 0;
 }
 
 
@@ -344,7 +405,7 @@ nav > a:hover{
     padding-right: 20px;
     width: 486px;
     height: 468px;
-    /* box-shadow: 10px 15px 12px rgba(0.0.0 0.9); */
+    box-shadow: 10px 15px 12px rgba(0.0.0 0.9);
 }
 
 .card-top{
@@ -358,7 +419,7 @@ nav > a:hover{
 }
 
 .project-card .card-bottom{
-    height: 123px;
+    height: 163px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -528,7 +589,7 @@ nav > a:hover{
 
 .pds-image .right-side{
     width: 338px;
-    height: 326px;
+    height: 626px;
     gap: 16px;
 
     min-width: 250px;
@@ -683,11 +744,11 @@ nav > a:hover{
 }
 
 .img-and-text p{
-    font-size: 200%;
+    font-size: 36px;
 }
 
 .img-and-text footer{
-    padding-top: 195px;
+    padding-top: 145px;
 
     display: flex;
     flex-direction: column;
@@ -713,6 +774,46 @@ nav > a:hover{
 
 
 /*******************  FAQ SECTION  ******************/
+
+
+.question{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+
+.answer-panel {
+    padding: 0 18px;
+    color: #fff;
+    background-color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+  }
+
+
+  .question:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #000;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .question:after {
+    content: "\2796";  /* Unicode character for "minus" sign (-) */
+  }
 
 
 .faq-section{
@@ -757,7 +858,8 @@ nav > a:hover{
     display: flex;
     justify-content: space-between;
 
-    color: white;
+    background-color: #000;
+    color: #fff;
     font-size: 25px;
     font-weight: bold;
     padding: 30px 0 50px 0;
@@ -818,6 +920,7 @@ nav > a:hover{
 
     font-size: 20px;
     font-weight: bold;
+
     display: flex;
     justify-content: space-between;
 }
@@ -841,4 +944,9 @@ nav > a:hover{
 .right{
     display: flex;
     flex-direction: column;
+}
+
+.info-bottom-side{
+    color: #8A95AD;
+    padding-top: 150px;
 }
